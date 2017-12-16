@@ -1,0 +1,5 @@
+package: github.com/hIMEI29A/torsocks
+import:
+- package: golang.org/x/net
+  subpackages:
+  - proxy
