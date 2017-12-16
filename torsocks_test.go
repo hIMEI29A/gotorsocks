@@ -1,24 +1,13 @@
 package torsocks
 
 import (
-	"testing"
 	"fmt"
-	)
-
-
-
-func TestBadProxy(t *testing.T) {
-	fmt.Println("Testing bad Tor Proxy")
-	_, err := NewTorProxy("example.com:22")
-	if err == nil {
-		t.Fail()
-	}
-}
-
+	"testing"
+)
 
 func TestBadConnect(t *testing.T) {
 	fmt.Println("Testing to connect through 127.0.0.1:9050, to herp.derp:80.")
-	tp, err := NewTorProxy("127.0.0.1:9050")
+	tp, err := NewTorGate()
 	if err != nil {
 		fmt.Println("Maybe you are not running Tor?")
 		fmt.Println(err.Error())
@@ -32,12 +21,11 @@ func TestBadConnect(t *testing.T) {
 	}
 }
 
-
 func TestConnect(t *testing.T) {
-	onion := "227vftpsbp62v7bd.onion:6667"
+	onion := "facebookcorewwwi.onion:80"
 	fmt.Println("Testing to connect through 127.0.0.1:9050, to " + onion)
 
-	tp, err := NewTorProxy("127.0.0.1:9050")
+	tp, err := NewTorGate()
 	if err != nil {
 		fmt.Println("Maybe you are not running Tor?")
 		fmt.Println(err.Error())
@@ -54,4 +42,3 @@ func TestConnect(t *testing.T) {
 	}
 	fmt.Println("Connected to .onion successfully!")
 }
-
