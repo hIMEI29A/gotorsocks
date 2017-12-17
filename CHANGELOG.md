@@ -1,4 +1,4 @@
-# Changelog - torsocks
+# Changelog - gotorsocks
 
 ### 0.2.1
 

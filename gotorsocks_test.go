@@ -1,4 +1,4 @@
-package torsocks
+package gotorsocks
 
 import (
 	"fmt"

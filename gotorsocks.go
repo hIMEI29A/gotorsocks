@@ -1,18 +1,18 @@
-// @Package torsocks
+// @Package gotorsocks
 // @Author: Kalle Vedin <kalle.vedin@fripost.org>
 // @Author: hIMEI <himei@tuta.io>
 // @Date:   2017-12-16 22:02:59
 // @Copyright © 2017 hIMEI <himei@tuta.io>
 // @license MIT
 
-// Here is is GitHub fork of https://bitbucket.org/kallevedin/torsocks.
+// Here is GitHub fork of https://bitbucket.org/kallevedin/torsocks.
 // Import path "code.google.com/p/go.net/proxy" (same as "golang.org/x/net/proxy")
-// used in original version, is fatal broken, so packege uninstallabnle.
+// used in original version, is fatal broken, so original package uninstallable.
 // In current version import path corrected, and some detail of code is changed
 //
 // https://bitbucket.org/kallevedin/torsocks is relised on Public Domain.
 
-package torsocks
+package gotorsocks
 
 import (
 	"bytes"

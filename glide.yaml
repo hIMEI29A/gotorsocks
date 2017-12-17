@@ -1,4 +1,4 @@
-package: github.com/hIMEI29A/torsocks
+package: github.com/hIMEI29A/gotorsocks
 import:
 - package: golang.org/x/net
   subpackages:
