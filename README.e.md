@@ -26,11 +26,19 @@ So, **install Glide first**:
 ```sh
 curl https://glide.sh/get | sh
 ```
+Clone repo:
+
+```sh
+git clone https://github.com/hIMEI29A/gotorsocks.git
+
+cd gotorsocks
+```
 
 **Update** deps and install:
 
 ```sh
 glide update
+
 glide install
 ```
 It will install dependencies ("golang.org/x/net/proxy" only) to `vendor/` folder of the repo.
@@ -42,6 +50,12 @@ make
 ```
 
 It will **run tests** and if it passed, install **gotorsocks** in to your $GOPATH
+
+Also you can simply
+
+```sh
+go get github.com/hIMEI29A/gotorsocks
+```
 
 {{template "gh/releases" .}}
 
