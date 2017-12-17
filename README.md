@@ -1,11 +1,11 @@
 # gotorsocks
 
-**gotorsocks** - Easy to use Golang's **torify**. Gets CLI access to **Tor** proxying inside of **Go apps**. So, parses web-sites on the 
+**gotorsocks** - Easy to use Golang's **torify**. Provides CLI access to **Tor** proxying inside of **Go apps**. So, can parse web-sites on the 
 **.onion domens**.
 
-It is **GitHub-fork** of [BitBucket's repo](https://bitbucket.org/kallevedin/torsocks).
+It is GitHub **fork** of [this BitBucket's repo](https://bitbucket.org/kallevedin/torsocks).
 
-Old import path "code.google.com/p/go.net/proxy" (same as "golang.org/x/net/proxy") used in original version, is fatal broken, so original 
+Old import path "code.google.com/p/go.net/proxy" (same as "golang.org/x/net/proxy") used in original version, is deadly broken, so original 
 package uninstallable. In current version import path corrected, and some detail of code is changed.
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hIMEI29A/gotorsocks)](https://goreportcard.com/report/github.com/hIMEI29A/gotorsocks) [![GoDoc](https://godoc.org/github.com/hIMEI29A/gotorsocks?status.svg)](http://godoc.org/github.com/hIMEI29A/gotorsocks)
@@ -20,7 +20,7 @@ So, **install Glide first**:
 ```sh
 curl https://glide.sh/get | sh
 ```
-Clone repo:
+**Clone** repo:
 
 ```sh
 git clone https://github.com/hIMEI29A/gotorsocks.git

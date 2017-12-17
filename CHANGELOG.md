@@ -4,7 +4,7 @@
 
 __Changes__
 
-- pre-relise commit; previous version was unmentained, untagged and unrelised
+- pre-relise commit; previous version was unmaintained, untagged and unrelised
 - initial commit
 
 __Contributors__
