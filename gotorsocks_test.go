@@ -15,7 +15,7 @@ func TestBadConnect(t *testing.T) {
 	}
 	_, err = tp.DialTor("herp.derp:80")
 	if err == nil {
-		fmt.Println("We actually managed to connect to herp.derp. This is odd, and probably WRONG.\n")
+		fmt.Println("We actually managed to connect to herp.derp. This is odd, and probably WRONG.")
 		fmt.Println(err.Error())
 		t.Fail()
 	}

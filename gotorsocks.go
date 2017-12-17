@@ -23,15 +23,16 @@ import (
 	"golang.org/x/net/proxy"
 )
 
-// A Tor proxy. Is actually just a string with the address of the Tor Proxy. (Needs to be an IPv4
-// address or a domain name that can be translated to an IPv4 address, with a port.)
+// TorGate is  a Tor proxy. Is actually just a string with the address of the Tor Proxy.
+// (Needs to be an IPv4 address or a domain name that can be translated to an IPv4
+// address, with a port.)
 // Examples: "127.0.0.1:9050", "10.0.30.11:9150".
 type TorGate string
 
-// String constant with localhost's Tor port
+// TOR_GATE string constant with localhost's Tor port
 const TOR_GATE_ string = "127.0.0.1:9050"
 
-// Creates new TorGate
+// NewTorGate creates new TorGate
 func NewTorGate() (*TorGate, error) {
 	duration, _ := time.ParseDuration("10s")
 	connect, err := net.DialTimeout("tcp4", TOR_GATE_, duration)
@@ -62,7 +63,7 @@ func NewTorGate() (*TorGate, error) {
 	}
 }
 
-// Dials to the .onion address
+// DialTor() dials to the .onion address
 func (gate *TorGate) DialTor(address string) (net.Conn, error) {
 	dialer, err := proxy.SOCKS5("tcp4", string(*gate), nil, proxy.Direct)
 
