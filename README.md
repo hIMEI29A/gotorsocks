@@ -1,10 +1,4 @@
----
-title: "gotorsocks - Easy to use Golang's torify"
-date: "2017-12-01T22:13:12-05:00"
-categories: ["Network", "Anonimity"]
-tags: ["go","programming","gotorsocks","tor"]
----
-# {{.Name}}
+# gotorsocks
 
 **gotorsocks** - Easy to use Golang's **torify**. Gets CLI access to **Tor** proxying inside of **Go apps**. So, parses web-sites on the 
 **.onion domens**.
@@ -14,9 +8,9 @@ It is **GitHub-fork** of [BitBucket's repo](https://bitbucket.org/kallevedin/tor
 Old import path "code.google.com/p/go.net/proxy" (same as "golang.org/x/net/proxy") used in original version, is fatal broken, so original 
 package uninstallable. In current version import path corrected, and some detail of code is changed.
 
-{{template "badge/goreport" .}} {{template "badge/godoc" .}}
+[![Go Report Card](https://goreportcard.com/badge/github.com/hIMEI29A/gotorsocks)](https://goreportcard.com/report/github.com/hIMEI29A/gotorsocks) [![GoDoc](https://godoc.org/github.com/hIMEI29A/gotorsocks?status.svg)](http://godoc.org/github.com/hIMEI29A/gotorsocks)
 
-{{pkgdoc}}
+
 
 ## Install
 
@@ -43,7 +37,7 @@ make
 
 It will **run tests** and if it passed, install **gotorsocks** in to your $GOPATH
 
-{{template "gh/releases" .}}
+Check the [release page](https://github.com/hIMEI29A/gotorsocks/releases)!
 
 ## Example
 
