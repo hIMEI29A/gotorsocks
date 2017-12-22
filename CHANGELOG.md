@@ -1,5 +1,10 @@
 # Changelog - gotorsocks
 
+### 0.3.2
+
+- Makefile's error fixed
+- Main file gotorsocks.go changed
+
 ### 0.2.1
 
 __Changes__
