@@ -5,7 +5,7 @@
 // @Copyright © 2017 hIMEI <himei@tuta.io>
 // @license MIT
 
-// Here is GitHub fork of https://bitbucket.org/kallevedin/torsocks.
+// gotorsocks Here is GitHub fork of https://bitbucket.org/kallevedin/torsocks.
 // Import path "code.google.com/p/go.net/proxy" (same as "golang.org/x/net/proxy")
 // used in original version, is fatal broken, so original package uninstallable.
 // In current version import path corrected, and some detail of code is changed
@@ -63,7 +63,7 @@ func NewTorGate() (*TorGate, error) {
 	}
 }
 
-// DialTor() dials to the .onion address
+// DialTor dials to the .onion address
 func (gate *TorGate) DialTor(address string) (net.Conn, error) {
 	dialer, err := proxy.SOCKS5("tcp4", string(*gate), nil, proxy.Direct)
 
